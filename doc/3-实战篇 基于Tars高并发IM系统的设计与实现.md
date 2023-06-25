@@ -1821,12 +1821,57 @@ ITnImSdkCallback
 
 ### 源码说明
 #### 源码地址
+https://github.com/lanhy/otim.git
+
 #### 目录说明
+- doc 
+    - 文档目录，目前有两个文档著作
+    - 《基于Tars高并发IM系统的设计与实现》
+    - 《OMTP协议说明文档》
+- client 
+    - 客户端SDK及示例代码
+- server 
+    - 服务端代码，基于Tars微服务架构的IM系统相关子服务；
+- test 
+    - 自动测试代码;
+
 #### 服务端源码结构
-
-#### 客户端源码结构
-
-
+- BrokerServer	
+    接入服务	
+- HttpServer
+    开放平台及接口服务		
+- AuthServer	
+    认证服务	
+- GroupChatServer	
+    群聊服务
+- PushServer
+    离线push服务
+- BizMsgServer	
+    业务通知消息服务	
+- HistoryMsgServer	
+    离线(历史)消息服务
+- SingleChatServer
+    单聊服务
+- UserFriendServer
+    用户好友服务开放平台及接口服务
+- MsgOperatorServer	
+    消息操作服务
+- OlapServer	
+    Mysql冷存储服务	
+- third
+    第三方库
+- Common		
+    公共模块	
+- CommonTars	
+    OMTP协议Tars文件	
+    
+#### 客户端SDK源码结构
+- lib	
+    第三方库	
+- source
+    客户端SDK代码
+- TestSDK	
+    SDK调用实例		
 
 
 
