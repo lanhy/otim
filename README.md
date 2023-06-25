@@ -36,9 +36,10 @@
 ## 目录结构：
 
 - doc 
-    - 文档目录，目前有两个文档著作
-    - 《基于Tars高并发IM系统的设计与实现》
-    - 《OMTP协议说明文档》
+    - [OMTP协议说明文档](https://github.com/lanhy/otim/blob/main/doc/OMTP%E5%8D%8F%E8%AE%AE%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3.md)
+    - [1-基础篇 基于Tars高并发IM系统的设计与实现](https://github.com/lanhy/otim/blob/main/doc/1-%E5%9F%BA%E7%A1%80%E7%AF%87%20%E5%9F%BA%E4%BA%8ETars%E9%AB%98%E5%B9%B6%E5%8F%91IM%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0.md)
+    - [2-进阶篇 基于Tars高并发IM系统的设计与实现](https://github.com/lanhy/otim/blob/main/doc/2-%E8%BF%9B%E9%98%B6%E7%AF%87%20%E5%9F%BA%E4%BA%8ETars%E9%AB%98%E5%B9%B6%E5%8F%91IM%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0.md)
+    - [3-实战篇 基于Tars高并发IM系统的设计与实现](https://github.com/lanhy/otim/blob/main/doc/3-%E5%AE%9E%E6%88%98%E7%AF%87%20%E5%9F%BA%E4%BA%8ETars%E9%AB%98%E5%B9%B6%E5%8F%91IM%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0.md)
 - client 
     - 客户端SDK及示例代码
 - server 
