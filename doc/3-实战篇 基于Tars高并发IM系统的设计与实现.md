@@ -689,7 +689,7 @@ make 出目标文件，上传到能访问服务器的环境中进行运行测试
  ### 创建服务
   **IM服务应用名称:otim(Open Tars IM)**
 通过以下脚本，可以创建上文中设计的IM服务。
-```
+```shell
 /usr/local/tars/cpp/script/create_tars_server.sh otim BrokerServer BrokerServant
 /usr/local/tars/cpp/script/create_tars_server.sh otim AuthServer AuthServant
 /usr/local/tars/cpp/script/create_tars_server.sh otim UserFriendServer UserFriendServant
@@ -717,16 +717,16 @@ make 出目标文件，上传到能访问服务器的环境中进行运行测试
 
 #### 根据协议打包/解包客户端请求
 * 通过非Tars协议接受客户端数据；
-```
+```cpp
 addServant<BrokerServantImp>(ServerConfig::Application + "." + ServerConfig::ServerName + ".BrokerServantObj");
 ```
 * 通过Tars框架提供的方法设置监听端口的协议解析器，实现解包数据功能；
-```
+```cpp
   //设置监听端口的协议解析器
 addServantProtocol(ServerConfig::Application + "." + ServerConfig::ServerName + ".BrokerServantObj", &OTIMProtocol::parse);
 ```
 * 根据协议进行数据报文解析
-```
+```cpp
 const uint32_t PKG_MIN_SIZE = 4;
 const uint32_t PKG_MAX_SIZE = 640000;
 
@@ -774,7 +774,8 @@ struct OTIMProtocol
 ``` 
 #### 接受数据报文处理
 根据不同的业务类型，不同处理；
-```
+```cpp
+
 int BrokerServantImp::doRequest(tars::TarsCurrentPtr current, vector<char>& response)
 {
     try {
@@ -815,8 +816,9 @@ int BrokerServantImp::doRequest(tars::TarsCurrentPtr current, vector<char>& resp
 ```
 
 #### 配置文件拉取及Redis初始化
-```
-  bool ret = addAppConfig(otim::CONF_REDIS);
+```cpp
+
+    bool ret = addAppConfig(otim::CONF_REDIS);
     MLOG_DEBUG("addAppConfig:"<<otim::CONF_REDIS<<" ret:"<<ret);
 
     std::string redisConf = ServerConfig::BasePath+otim::CONF_REDIS;
@@ -846,7 +848,7 @@ int BrokerServantImp::doRequest(tars::TarsCurrentPtr current, vector<char>& resp
 - 长链接记录分为两部分：内存存储，redis存储
 - 内存中保存当前服务的长链接信息；redis中保存所有服务的长链接信息；
 - 长链接信息包含客户端相关信息（比如clientId，版本号，长链接id，登录时间，是否压缩，是否加密等等），实现类：LongLink
-```
+```cpp
 struct LongLink{
     otim::ClientContext context;
     tars::TarsCurrentPtr current;
@@ -889,7 +891,7 @@ struct LongLink{
 
 ```
 - redis长链接用单例类LongLinkRedis处理；
-```
+```cpp
 class LongLinkRedis : public tars::TC_Singleton<LongLinkRedis>
 {
 public:
@@ -904,7 +906,7 @@ public:
     - 根据clientId获取到长链接信息
     - 更新长链接信息
     - 移除长链接信息
-```
+```cpp
 class LongLinkManager : public tars::TC_Singleton<LongLinkManager>
 {
 public:
@@ -925,7 +927,7 @@ private:
 };
 ```
 * 长链接维护--心跳
-```
+```cpp
 ......
  case otim::PT_PING:
         this->processPingReq(current, pLongLink->context, pack);
@@ -950,7 +952,7 @@ void BrokerServantImp::processPingReq(tars::TarsCurrentPtr current, const otim::
  
  业务请求转发规则通过配置文件来进行配置；
  * 转发配置如下：
- ```
+ ```xml
  <otim>
 <servermap>
 <server1>
@@ -981,8 +983,9 @@ name=otim.MsgOperatorServer.MsgOperatorServantObj
  ```
  
  * 配置解析
- ```
-   std::vector<std::string> vList = myConf.getDomainVector("/otim/servermap");
+ ```cpp
+ 
+    std::vector<std::string> vList = myConf.getDomainVector("/otim/servermap");
     for (auto strItem : vList)
     {
         std::string keypath = "/otim/servermap/" + strItem;
@@ -1010,7 +1013,7 @@ name=otim.MsgOperatorServer.MsgOperatorServantObj
  ```
  
  * 转发逻辑
- ```
+ ```cpp
  
         auto iter = _mapServerName.find(req.header.type);
         if (iter == _mapServerName.end()){
@@ -1031,7 +1034,8 @@ name=otim.MsgOperatorServer.MsgOperatorServantObj
  ```
  
 #### Tars接口（对内部其他服务提供接口，比如单聊，群聊等）
-```
+```cpp
+
 interface BrokerPushServant
 {
     int push(long uid, OTIMPack pack);
@@ -1057,7 +1061,8 @@ interface BrokerPushServant
     
     int syncMsg(otim::ClientContext clientContext, OTIMPack pack);
 
-```
+```cpp
+
 tars::Int32 BrokerPushServantImp::syncMsg(const otim::ClientContext & clientContext, const otim::OTIMPack & pack,tars::TarsCurrentPtr current)
 {
     try
@@ -1096,7 +1101,8 @@ tars::Int32 BrokerPushServantImp::syncMsg(const otim::ClientContext & clientCont
 * 踢出用户某个链接
    
     int kickout(otim::ClientContext clientContext, long uid);
-```
+```cpp
+
  LongLinkPtr link = LongLinkManager::getInstance()->getLonglinkByUId(uid);
     if (link.get() == nullptr){
         MLOG_DEBUG("link is null:"<<uid);
@@ -1117,7 +1123,7 @@ tars::Int32 BrokerPushServantImp::syncMsg(const otim::ClientContext & clientCont
 ####  认证服务 AuthServer
 根据用户登录认证请求，进行处理，可以调用第三方认证服务，也可以是本机认证服务，根据需求处理；
 
-```
+```cpp
 struct AuthParam
 {
     0 require  string   packId;
@@ -1137,7 +1143,7 @@ tars::Int32 AuthServantImp::auth(const otim::ClientContext & clientContext,const
 ```
 ##### 如何对接自己的认证系统
 实现AuthServantImp::auth方法即可
-```
+```cpp
 tars::Int32 AuthServantImp::auth(const otim::ClientContext & clientContext,const otim::AuthParam & authParam,std::string &extraData,tars::TarsCurrentPtr _current_)
 {
 	MLOG_DEBUG("context:"<<clientContext.writeToJsonString()<<" authParam:"<<authParam.writeToJsonString());
@@ -1157,7 +1163,7 @@ tars::Int32 AuthServantImp::auth(const otim::ClientContext & clientContext,const
 - 获取用户属性（备注，别名等）
 
 服务收到请求后，根据请求类型进行不同处理：
-```
+```cpp
     switch(req.header.type){
         case otim::PT_FRIEND_ADD:
             this->addFriend(clientContext, req, resp);
@@ -1192,7 +1198,7 @@ tars::Int32 AuthServantImp::auth(const otim::ClientContext & clientContext,const
 ```
 
 以上功能主要通过如下方法实现：
-```
+```cpp
 
     int syncFriends(const otim::ClientContext & clientContext, const otim::OTIMPack & req,  otim::OTIMPack & resp);
     int addFriend(const otim::ClientContext & clientContext, const otim::OTIMPack & req,  otim::OTIMPack & resp);
@@ -1629,7 +1635,7 @@ https://push.vivo.com.cn/#/
 https://push.oppo.com/
 
 RPC接口
-```
+```cpp
 enum PushServiceType
 {
     PS_TYPE_NONE = 0, //无 Push服务提供商
