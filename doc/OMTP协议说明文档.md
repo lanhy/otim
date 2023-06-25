@@ -87,7 +87,7 @@ COMPRESS|3 bits|压缩算法，00:无压缩，01:zlib
 CRYPTO|3 bits|加密算法，00:无加密，01:AES
 RESERVED|13-51 bits|保留
 
-```
+```cpp
 
 //ACK|DUP|COUNTER|OVERRIDE|REVOKE|HIGHPRJ|COMPRESS|CRYPTO|RESERVED
 struct PT_FLAGS_BITS{
@@ -104,7 +104,7 @@ struct PT_FLAGS_BITS{
 ```
 
 #### 报文类型
-```
+```cpp
 enum PACK_TYPE
 {
     PT_NONE       = 0,      //00-09 保留
@@ -173,7 +173,7 @@ deviceName|	string|	设备名称
 deviceId|	string|	设备id
 version|	string|	app版本号，如：“3.2.1”
 
-```
+```cpp
 enum DEVICE_TYPE
 {
     DEVICE_NONE     = 0, 
@@ -208,7 +208,7 @@ struct LoginReq
 code|int	|登录返回码 
 desc|string	|错误原因 
 
-```
+```cpp
 struct LoginResp
 {
     0 require int code; //认证结果码值
@@ -233,7 +233,7 @@ struct LoginResp
 * flags ACK位: 0
 * Payload：KickOutReq
 
-```
+```cpp
 struct KickOutReq
 {
     0 require  int    deviceType;   //准备要踢掉的 deviceType
@@ -262,7 +262,7 @@ status|	int	|消息状态，0:正常，1:撤回，2:删除
 contentType|	int|	消息内容类型：1：文本， 2：语音，3：图片，5：位置，6:视频, 7：文件 8：富媒体
 content|	Format（header里面定义格式）|	根据contentType，有不同字段，下文详细说明
 
-```
+```cpp
 struct MsgReq
 {
     0 require string        sessionId;       //会话Id
@@ -289,7 +289,7 @@ sessionId	|string	|会话Id
 seqid	|long	|序列号，排序用，服务端产生
 timestamp|	long|	时间戳
 
-```
+```cpp
 struct MsgAck
 {
     0 require int    code; 
@@ -357,7 +357,7 @@ command|	int|	1.撤销，2.删除
 sessionId|	string|	会话Id
 packId|	string|	目标消息packId
 
-```
+```cpp
 struct MsgControl
 {
     0 require int    command ;    //1.撤销，2.删除
@@ -378,7 +378,7 @@ struct MsgControl
 code	|int|	错误码
 desc	|string|	错误信息
 
-```
+```cpp
 struct CommonResp
 {
     0 require int    code ;    //错误码
@@ -396,7 +396,7 @@ struct CommonResp
 sessionId|	string|	会话Id
 seqId	|long	|起始seqId
 
-```
+```cpp
 struct MsgReaded
 {
     0 require string sessionId ; //会话Id
@@ -418,7 +418,7 @@ struct MsgReaded
 ----- | ------|-------
 timestamp|	long	|时间戳
 
-```
+```cpp
 struct HotSessionReq
 {
     0 require long    timestamp ;    //单位微秒，本地拉取会话时间戳或者断点时间戳
@@ -445,7 +445,7 @@ readSeqId	|long| 已读seqId
 unreadCount|	Int|	未读数
 lastMsgs	|Vector<MsgItem>|	最新n条消息
 
-```
+```cpp
 struct HotSessionItem
 {
     0 require string   sessionId;                 // 会话Id
@@ -474,7 +474,7 @@ struct HotSessionResp
 seqId|	long	|当前最新seqId
 count|	int	|获取数量
 
-```
+```cpp
 struct MsgHighPrioritySyncReq
 {
     0 require long seqId;
@@ -496,7 +496,7 @@ desc|	string	|错误描述
 lastSeqId|	long	|最新seqId
 msgs|	vector<OTIMPack>	|消息
 
-```
+```cpp
 struct MsgHighPrioritySyncResp
 {
     0 require int  code;            //服务请求的结果码
@@ -517,7 +517,7 @@ sessionId|	string|	会话id
 seqId	|long	|起始seqid
 count	|int|	消息数量
 
-```
+```cpp
 struct HistoryMsgPullReq
 {
     0 optional string sessionId;
@@ -537,7 +537,7 @@ errorCode	|CommonErrorCode|	错误信息
 sessionId	|string|	会话id
 msgs|	vector<OTIMPack>|	消息内容
 
-```
+```cpp
 struct HistoryMsgPullResp
 {
     0 require CommonErrorCode errorCode;
@@ -555,7 +555,7 @@ struct HistoryMsgPullResp
 ----- | ------|-------
 sessionId	|string|	会话id
 
-```
+```cpp
 struct SessionMonitor
 {
     0 require string sessionId;
@@ -577,7 +577,7 @@ struct SessionMonitor
 ----- | ------|-------
 sessionId	|string|	会话id
 
-```
+```cpp
 struct SessionMonitor
 {
     0 require string sessionId;
@@ -613,7 +613,7 @@ struct SessionMonitor
 command	|int|	业务类型 1,好友列表，2，会话，3，群聊
 content	|string|	业务数据
 
-```
+```cpp
 struct SyncDataReq
 {
     0 require int command;
@@ -635,7 +635,7 @@ struct SyncDataReq
 ----- | ------|-------
 timestamp	|long|	同步时间戳
 
-```
+```cpp
 struct GroupChatSyncReq
 {
     0 require long timestamp;
@@ -653,7 +653,7 @@ errorCode	|CommonErrorCode|	错误信息
 timestamp	|long|	同步时间戳
 groupchats	|vector<GroupChatInfo>|	GroupChatInfo 群聊列表
 
-```
+```cpp
 struct GroupChatInfo
 {
     0 require string groupId;               // 班级群groupid由classid和classcode组合生成
@@ -680,7 +680,7 @@ struct GroupChatSyncResp
 * flags ACK位: 0
 * Payload:GroupChatCreateReq
 
-```
+```cpp
 struct GroupChatCreateReq
 {
     0 require GroupChatInfo groupInfo;
@@ -699,7 +699,7 @@ struct GroupChatCreateReq
 errorCode	|CommonErrorCode|	
 groupId	|string|	
 
-```
+```cpp
 struct GroupChatCreateResp
 {
     0 require CommonErrorCode errorCode;
@@ -717,7 +717,7 @@ struct GroupChatCreateResp
 groupId	|string|	
 memberIds	|vector|	userId列表
 
-```
+```cpp
 struct GroupChatJoinReq
 {
     0 require string groupId;
@@ -735,7 +735,7 @@ struct GroupChatJoinReq
 errorCode	|CommonErrorCode|	
 groupId	|string|	
 
-```
+```cpp
 struct GroupChatJoinResp
 {
     0 require CommonErrorCode errorCode;
@@ -754,7 +754,7 @@ groupId	|string|
 operatorId	|string|	操作者userId
 memberIds	|vector|	退出的userId列表
 
-```
+```cpp
 struct GroupChatQuitReq
 {
     0 require string groupId;
@@ -779,7 +779,7 @@ groupId	|string|
 operatorId	|string|	操纵者userId
 memberIds	|vector|	退出的userId列表
 
-```
+```cpp
 struct GroupChatDismissReq
 {
     0 require string groupId;
@@ -803,7 +803,7 @@ groupId	|string|
 operatorId	|string|	操纵者userId
 memberIds	|vector|	退出的userId列表
 
-```
+```cpp
 struct GroupChatCreatorUpdateReq
 {
     0 require string groupId;
@@ -827,7 +827,7 @@ struct GroupChatCreatorUpdateReq
 operatorId	|string|	操作者userId
 groupInfo	|GroupChatInfo|	群信息
 
-```
+```cpp
 struct GroupChatInfoUpdateReq
 {
     0 require string operatorId;
@@ -849,7 +849,7 @@ struct GroupChatInfoUpdateReq
 ----- | ------|-------
 groupId	|string|	群Id
 
-```
+```cpp
 struct GroupChatMemberGetReq
 {
     0 require string groupId;
@@ -867,7 +867,7 @@ errorCode	|CommonErrorCode|
 groupId	|string|	群Id
 memberIds	|vector|群成员userId列表
 
-```
+```cpp
 struct GroupChatMemberGetResp
 {
     0 require CommonErrorCode errorCode;
@@ -885,7 +885,7 @@ struct GroupChatMemberGetResp
 ----- | ------|-------
 friends	|vector|	好友FriendInfo列表
 
-```
+```cpp
 struct FriendInfo
 {
     0 require string userId;
@@ -914,7 +914,7 @@ struct FriendAddReq
 ----- | ------|-------
 friends	|vector|	好友FriendInfo列表
 
-```
+```cpp
 struct FriendDelReq
 {
     0 require vector<FriendInfo> friends;
@@ -937,7 +937,7 @@ struct FriendDelReq
 ----- | ------|-------
 timestamp	|long|	增量时间戳
 
-```
+```cpp
 struct FriendSyncReq
 {
     0 require long timestamp;
@@ -950,7 +950,7 @@ struct FriendSyncReq
 * flags ACK位: 1
 * Payload:FriendSyncResp
 
-```
+```cpp
 struct FriendSyncResp
 {
     0 require CommonErrorCode errorCode;
@@ -968,7 +968,7 @@ struct FriendSyncResp
 ----- | ------|-------
 userIds	|vector|	用户id列表
 
-```
+```cpp
 struct UserInfoGetReq
 {
     0 require vector<string> userIds;
@@ -986,7 +986,7 @@ struct UserInfoGetReq
 errorCode	|CommonErrorCode|
 userInfos	|vector| UserInfo 列表
 
-```
+```cpp
 struct UserInfoGetResp
 {
     0 require CommonErrorCode errorCode;
@@ -1013,7 +1013,7 @@ struct UserInfo
 ----- | ------|-------
 userInfo	|UserInfo|	用户资料
 
-```
+```cpp
 struct UserInfoUpdateReq
 {
     0 require UserInfo userInfo;
@@ -1035,7 +1035,7 @@ struct UserInfoUpdateReq
 ----- | ------|-------
 attribute	|UserAttribute|	属性UserAttribute
 
-```
+```cpp
 struct UserAttribute
 {
     0 require string userId;
@@ -1068,7 +1068,7 @@ struct UserAttrSetReq
 * flags ACK位: 1
 * Payload:UserAttrGetResp
 
-```
+```cpp
 struct UserAttrGetResp
 {
     0 require CommonErrorCode errorCode;
@@ -1088,7 +1088,7 @@ sessionId	|string|
 attrName	|string|	属性名
 attrValue	|string|	属性值
 
-```
+```cpp
 struct SessionAttrSetReq
 {
     0 require string userId;
