@@ -1,0 +1,56 @@
+module otim
+{
+
+
+enum ERROR_CODE
+{
+    EC_SUCCESS                    = 0, //成功
+    EC_PROTOCOL                   = 1, //服务端不支持客户端请求的协议
+    EC_PARAM                      = 2, //参数错误
+    EC_UNKOWN                     = 3, //未知错误
+    EC_DB_ERROR                   = 5, //数据库访问错误，检查数据库配置
+    EC_SERVICE_UNAVAILABLE        = 6, //服务不可用
+    EC_SERVER_REFUSED             = 7, //拒绝服务
+    EC_SERVER_EXCEPTION           = 8, //服务异常
+    EC_MEM_NOT_ENOUGH             = 9, //内存不足
+    EC_SENSI_MATCH                = 10,//命中敏感词
+    EC_REDIS_ERROR                = 11,//redis访问异常
+
+    EC_CONN_INDICATE              = 20, //客户端标识（clientId，deviceType,deviceid）符不正确
+    EC_CONN_USERNAME_OR_PASSWORD  = 21, //用户名或密码错误
+    EC_CONN_KICKOUT               = 22, //重复登录,该客户端被踢出
+    EC_CONN_ACCESS_DENIED        = 23,  //用户未授权
+    EC_CONN_THRIDS_REJECT        = 24,  //第三方调用认证拒绝服务
+   
+    EC_HOTSESSION_MORE           = 25, //还有热会话，需要继续拉
+    EC_HOTSESSION_FAILED         = 26, //获取热会话失败
+    EC_HISTORYMSG_ERROR          = 27, //历史消息错误
+    EC_HISTORYMSG_DENY          = 28, //没权限获取历史消息
+
+    EC_GROUP_USER_NOTEXIST      = 30, //用户不在群里
+    EC_GROUP_ID_EMPTY           = 31, //GroupId为空
+    EC_GROUP_EMPTY              = 32, //群为空，没有人在群里.
+    EC_GROUP_NO_PRIVILEGE       = 33, //没有权限加入群聊.
+    EC_GROUP_MEMBER_LIMIT       = 34, //群成员超限
+    EC_GROUP_NOT_EXIST          = 35, //群不存在
+    EC_GROUP_CREAGOR_ERROR      = 36, //群主错误
+
+    EC_MSG_TOO_SHORT            = 40,    //消息太短
+    EC_MSG_TOO_LONG             = 41,    //消息太长
+    EC_MSG_INVALID_FORMAT       = 42,    //消息格式错误
+    EC_MSG_FOBIDDEN         = 43,//消息禁止
+    EC_MSG_NOT_EXIST        = 44,//消息不存在
+    EC_MSG_TIMEOUT          = 45,//发送消息超时
+    EC_MSG_REPEATED          = 46,//消息重复
+    EC_MSG_OP_CMD          = 47,//消息操作command错误
+
+    EC_USER_RELATION_INVALID    = 50, //用户关系不正确，不能发消息
+    EC_USER_BLACKLISt           = 51, //用户在黑名单
+    EC_USER_VERSION             = 52, //用户版本号不正确
+    
+    EC_ATTR_FIELD_EMPTY = 60,   //属性名错误
+    EC_ATTR_VALUE_EMPTY = 61,   //属性值错误
+
+};
+
+};

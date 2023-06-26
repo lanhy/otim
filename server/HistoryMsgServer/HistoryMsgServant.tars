@@ -1,0 +1,10 @@
+
+module otim
+{
+
+interface HistoryMsgServant
+{
+    int test();
+};
+
+}; 

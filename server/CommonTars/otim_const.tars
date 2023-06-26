@@ -1,0 +1,25 @@
+module otim
+{
+const string CONF_REDIS = "redis.conf";
+const string CONF_MYSQL = "mysql.conf";
+
+const string RKEY_CONN = "CLIENTCONN:";
+const string RKEY_HOTSESSION = "HOTSESSION:";
+const string RKEY_MSG = "MSG:";
+const string RKEY_MSG_HIGHPRJ = "MSGHIGHPRJ:";
+const string RKEY_UNREADCOUNT = "UNREADCOUNT:";
+const string RKEY_REPEATPACKID = "REPEATPACKID:";
+
+const string RKEY_GROUPINFO = "GROUPINFO:";
+const string RKEY_GROUPMEMBER = "GROUPMEMBER:";
+const string RKEY_MYGROUP = "MYGROUP:";
+const string RKEY_USERINFO = "USERINFO:";
+const string RKEY_FRIEND = "FRIEND:";
+
+   
+const string RKEY_USERATTR = "USER_ATTR:";
+const string RKEY_SESSIONATTR = "SESSION_ATTR:";
+
+const string RKEY_TASKCACHE = "TASKCACHE:";
+
+};

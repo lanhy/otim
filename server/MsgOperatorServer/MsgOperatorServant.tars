@@ -1,0 +1,10 @@
+
+module otim
+{
+
+interface MsgOperatorServant
+{
+    int test();
+};
+
+}; 

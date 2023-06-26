@@ -1,0 +1,425 @@
+module otim
+{
+enum PACK_TYPE
+{
+    PT_NONE       = 0,      //00-09 保留
+    PT_PING       = 10,     //心跳
+    PT_LOGIN      = 11,     //登录认证
+    PT_LOGOUT      = 12,    //登出
+    PT_KICKOUT     = 13,    //踢出
+    PT_MSG_SINGLE_CHAT  = 14,//单聊消息
+    PT_MSG_GROUP_CHAT   = 15,//群聊消息
+    PT_MSG_BIZ_NOTIFY   = 16,//业务通知消息
+    PT_MSG_CTRL      = 17,  //消息控制指令（比如撤销，删除等）
+    PT_MSG_READ      = 18,  //消息已读
+    PT_HOTSESSION_SYNC     = 19, //热会话同步
+    PT_HIGH_PRIOR_MSG_SYNC     = 20,  //高优先级消息同步
+    PT_HISTORY_MSG_PULL        = 21, //拉历史消息
+    PT_SESSION_MONITOR_START   = 22,//监控会话开始
+    PT_SESSION_MONITOR_STOP    = 23,//监控会话结束
+    PT_SESSION_MONITOR_SYNC = 24,   //监控会话同步（同步登陆用户的会话）
+    PT_SYNC_DATA_CMD      = 25, //同步数据指令,根据该指令可以客户端可以进行各种增量数据同步（比如会话，好友记录，群聊等）
+
+    PT_GROUPCHAT_SYNC      = 40,    //同步我的群(我创建，加入，监听的群里)
+    PT_GROUPCHAT_CREATE    = 41,    //创建群聊
+    PT_GROUPCHAT_JION      = 42,    //加入群聊
+    PT_GROUPCHAT_QUIT      = 43,    //退出群聊
+    PT_GROUPCHAT_DISMISS   = 44,    //解散群聊
+    PT_GROUPCHAT_UPDATE_CREATOR  = 45, //换群主
+    PT_GROUPCHAT_INFO_UPDATE     = 46, //更新群资料
+    PT_GROUPCHAT_MEMBERS_GET     = 47,  //获取群成员
+
+    PT_FRIEND_ADD      = 51,    //添加好友
+    PT_FRIEND_DEL      = 52,    //删除好友
+    PT_FRIEND_SYNC     = 53,    //同步好友
+    
+    PT_USERINFO_GET            = 54, //获取用户信息
+    PT_USERINFO_UPDATE         = 55, //用户信息更新
+    PT_USERATTRIBUTE_SET      = 56, //设置用户属性，比如昵称
+    PT_USERATTRIBUTE_GET      = 57, //获取用户属性，比如昵称
+    PT_SESSIONATTRIBUTE_SET   = 58, //设置会话属性，比如置顶，免打扰
+  
+};
+
+
+enum PACK_FLAGS
+{
+    PF_ISACK        = 0x0001,  // 是否为ACK/RESP
+    PF_ISDUP        = 0x0002,  // 是否是重发的请求,
+    PF_COUNTER      = 0x0004,  // 是否计数
+    PF_OVERRIDE     = 0x0008,  // 是否覆写
+    PF_REVOKE       = 0x0010,  // 是否撤回
+    PF_HIGHPRJ      = 0x0020,  // 是否高优先级
+};
+
+enum FLAGS_COMPRESS
+{
+    PF_COMPRESS_NONE = 0x0,  // 无压缩
+    PF_COMPRESS_ZLIB = 0x1,  // ZLIB,
+};
+
+enum FLAGS_CRYPTO
+{
+    PF_CRYPTO_NONE = 0x0,  // 无加密
+    PF_CRYPTO_AES  = 0x1,  // AES
+};
+
+
+
+struct OTIMHeader
+{
+    0 require short         type;
+    1 require short         version;
+    2 require long          flags;
+    3 require string        packId;
+};
+
+struct OTIMPack
+{
+	0 require OTIMHeader    header;
+	1 require vector<byte> 	payload;
+};
+
+struct ClientContext
+{
+	0 require  string    clientId;
+    1 require  long      uid;
+    2 require  int       deviceType;
+    3 require  string    deviceId;
+	4 require  string    brokerId;
+};
+
+struct CommonErrorCode
+{
+    0 require int    code ;    //错误码
+    1 require string desc ;    //错误信息
+};
+
+
+enum DEVICE_TYPE
+{
+    DEVICE_NONE     = 0, 
+    DEVICE_IOS      = 1, 
+    DEVICE_ANDROID  = 2,
+    DEVICE_MACOS    = 3, 
+    DEVICE_WINDOWS  = 4, 
+    DEVICE_LINUX    = 5,
+};
+
+/* 登录请求 */
+struct LoginReq
+{
+    0 require  string clientId  ;   //用户UserId
+    1 require  string userName  ;   //登录名（手机号）
+    2 optional string password   ;   //密码,token（如：a502c991-9ab9-4823-bde9-520d9169545b）
+    3 optional DEVICE_TYPE    deviceType;   //设备类型：1：ios，2：android，3：windows PC,4:Mac OS 5:Linux
+    4 optional string deviceName;   //设备名称
+    5 optional string deviceId;      //设备唯一标识
+    6 optional string version;          //客户端的版本号
+};
+    
+/* 登录请求回复 */
+struct LoginResp
+{
+    0 require CommonErrorCode errorCode;
+    1 optional string clientId;
+    2 optional string  extraData; 
+};
+
+/* 踢人消息请求 */
+struct KickOutReq
+{
+    0 require  int    deviceType;   //准备要踢掉的 deviceType
+    1 require  string    deviceId;   //准备要踢掉的 设备类型deviceId，
+};
+
+/* 踢人请求的回复 */
+struct KickOutAck
+{
+    0 require CommonErrorCode errorCode;
+};
+
+
+struct PushInfo
+{
+    0 require string        title;
+    1 require string        summary;
+    2 optional string       url;
+};
+
+/*消息结构体*/
+struct MsgReq
+{
+    0 require string        sessionId;       //会话Id
+    1 optional long         seqId       ;   //由服务器端填写,客户端用来排序.
+    2 optional long         timestamp    ;   //消息时间,由服务器端来填写.用来在客户端显示
+    3 require  string       from         ;   //消息发送者的名片Id或appid
+    4 require  string       to           ;   //消息接收者的名片Id或者群组Id
+    5 optional PushInfo     pushInfo     ;   //推送信息IOS-Push用,此字段无值表示不需要push
+    6 optional int          contentType  ;  //content 类型，文本，语音，图片等等，详见：msgcontent.tars中定义
+    7 optional string       content      ;   //内容可为JSON;字段见msgcontent.tars 中定义
+    8 optional int          status       ;   //消息状态 0:正常,1:删除,2:撤销
+};
+
+
+struct MsgAck
+{
+    0 require CommonErrorCode errorCode;
+    1 require string sessionId;
+    2 require long   seqId;
+    3 require long   timestamp; //消息类型
+ };
+
+//拉取热会话请求
+struct HotSessionReq
+{
+    0 require long    timestamp ;    //单位微秒，本地拉取会话时间戳或者断点时间戳
+};
+
+//单个会话的详细信息
+struct HotSessionItem
+{
+    0 require string   sessionId;                 // 会话Id
+    1 require  long    readSeqId;                //会话已读游标
+    2 require  int     unreadCount = 0;            //某会话未读数，默认值0
+    3 optional  vector<OTIMPack>  lastMsgs;   //该会话最新一条可显示的msg,normal_top_msg至少存在一条
+    4 optional string attribute;                 //会话属性集
+};
+
+//热会话详情信息
+struct HotSessionResp
+{
+    0 require CommonErrorCode errorCode;
+    1 require long         timestamp ;
+    2 require vector<HotSessionItem> sessions;  //所有会话的状态信息
+};
+
+enum MSG_CTL_CMD
+{
+    MC_REVOKE = 1,  // 撤回
+    MC_OVERRIDE = 2,  // 覆写
+    MC_DELETE = 3,  // 删除
+};
+
+struct MsgControl
+{
+    0 require int    command ;    //MSG_CTL_CMD枚举定义
+    1 require string sessionId ;    //会话Id
+    2 require string packId ;    //目标消息packId
+    3 require long  seqId ;    //目标消息seqId
+    4 optional string content; //覆写内容
+};
+
+
+struct MsgReaded
+{
+    0 require string sessionId ; //会话Id
+    1 require long  seqId ;     //已读消息seqId
+};
+
+struct MsgHighPrioritySyncReq
+{
+    0 require long seqId;
+    1 require int count = 200;//获取数量
+};
+
+struct MsgHighPrioritySyncResp
+{
+    0 require CommonErrorCode errorCode;
+    1 require long lastSeqId;       //上次
+    2 optional vector<OTIMPack> msgs;         //消息列表
+};
+
+struct HistoryMsgPullReq
+{
+    0 optional string sessionId;
+    1 require long seqId; //起始seqId
+    2 require int count = 200;//获取数量
+};
+
+struct HistoryMsgPullResp
+{
+    0 require CommonErrorCode errorCode;
+    1 require string sessionId; //起始sessionId
+    2 require vector<OTIMPack> msgs;
+};
+
+struct SessionMonitor
+{
+    0 require string sessionId;
+};
+
+enum SYNC_CMD
+{
+    SYNC_CMD_NONE           = 0,
+    SYNC_CMD_FRIEND         = 1,
+    SYNC_CMD_GROUP          = 2,
+    SYNC_CMD_GROUPINFO      = 3,
+    SYNC_CMD_GROUPMENBER    = 4,
+};
+
+struct SyncDataReq
+{
+    0 require int command;
+    1 require string content;
+};
+
+//groupchat
+struct GroupChatSyncReq
+{
+    0 require long timestamp;
+};
+
+struct GroupChatInfo
+{
+    0 require string groupId;               // 班级群groupid由classid和classcode组合生成
+    1 require string name;                 // 群聊名字
+    2 optional string avatar;               // 群聊头像
+    3 require string creatorId;            // 群聊创建者，即群主userId
+    4 optional string desc;                 // 群聊描述
+    5 optional int memberLimit;             // 最大成员数
+    6 optional long createTime;             // 创建时间
+    7 optional long updateTime;            // 更新时间
+};
+
+struct GroupChatSyncResp
+{
+    0 require CommonErrorCode errorCode;
+    1 require long timestamp;
+    2 require vector<GroupChatInfo> groupChats;
+    3 require vector<string> groupIds;
+};
+
+struct GroupChatCreateReq
+{
+    0 require GroupChatInfo groupInfo;
+    1 require vector<string> memberIds;
+};
+
+
+struct GroupChatCreateResp
+{
+    0 require CommonErrorCode errorCode;
+    1 require string groupId;
+};
+
+struct GroupChatJoinQuitReq
+{
+    0 require string groupId;
+    1 require vector<string> memberIds;
+};
+
+struct GroupChatDismissReq
+{
+    0 require string groupId;
+    1 require string operatorId;
+};
+
+struct GroupChatCreatorUpdateReq
+{
+    0 require string groupId;
+    1 require string operatorId;
+    2 require string newCreatorId;
+};
+
+struct GroupChatInfoUpdateReq
+{
+    0 require string operatorId;
+    1 require GroupChatInfo groupInfo;
+};
+
+struct GroupChatMemberGetReq
+{
+    0 require string groupId;
+};
+
+struct GroupChatMemberGetResp
+{
+    0 require CommonErrorCode errorCode;
+    1 require string groupId;
+    2 require vector<string> memberIds;
+};
+
+//firend
+struct FriendInfo
+{
+    0 require string userId;
+    1 require string friendId;
+    2 require string remark;//备注名
+};
+
+struct FriendAddReq
+{
+    0 require vector<FriendInfo> friends;
+};
+
+struct FriendDelReq
+{
+    0 require vector<FriendInfo> friends;
+};
+
+struct FriendSyncReq
+{
+    0 require long timestamp;
+};
+
+struct FriendSyncResp
+{
+    0 require CommonErrorCode errorCode;
+    1 require vector<FriendInfo> friends;
+};
+
+struct UserInfoGetReq
+{
+    0 require vector<string> userIds;
+};
+
+struct UserInfo
+{
+    0 require string userId;
+    1 require string name;
+    2 optional string avatar;
+    3 optional string mobile;
+    4 optional long birthday;//timestamp
+};
+
+struct UserInfoUpdateReq
+{
+    0 require UserInfo userInfo;
+};
+
+struct UserInfoGetResp
+{
+    0 require CommonErrorCode errorCode;
+    1 require vector<UserInfo> userInfos;
+};
+
+
+struct UserAttribute
+{
+    0 require string userId;
+    1 require string friendId;
+    2 require string attrName;
+    3 require string attrValue;
+};
+
+struct UserAttrSetReq
+{
+    0 require UserAttribute attribute;
+};
+
+struct UserAttrGetResp
+{
+    0 require CommonErrorCode errorCode;
+    1 require vector<UserAttribute> attributes;
+};
+
+struct SessionAttrSetReq
+{
+    0 require string userId;
+    1 require string sessionId;
+    2 require string attrName;
+    3 require string attrValue;
+};
+
+};

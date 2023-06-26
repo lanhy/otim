@@ -1,0 +1,10 @@
+#include "otim.tars"
+
+module otim
+{
+
+    interface BaseServant
+    {
+        int request(otim::ClientContext clientContext ,otim::OTIMPack req, out otim::OTIMPack resp);
+    };
+};

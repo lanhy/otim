@@ -1,0 +1,16 @@
+#include "../CommonTars/otim.tars"
+
+module otim
+{
+struct AuthParam
+{
+    0 require  string   packId;
+    1 require  LoginReq loginReq;
+};
+
+interface AuthServant
+{
+    int auth(otim::ClientContext clientContext, AuthParam authParam, out string extraData);
+};
+
+}; 

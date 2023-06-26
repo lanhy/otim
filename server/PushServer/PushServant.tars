@@ -1,0 +1,43 @@
+
+module otim
+{
+
+enum PushServiceType
+{
+    PS_TYPE_NONE = 0, //无 Push服务提供商
+    PS_TYPE_IOS = 1,  //IOS Push服务提供商
+    PS_YPE_HUAWEI = 2,   //华为 Push服务提供商
+    PS_TYPE_XIAOMI = 3,   //小米 Push服务提供商
+    PS_TYPE_MEIZU = 4,   //魅族 Push服务提供商
+    PS_TYPE_VIVO = 5,  //vivi服务
+    PS_TYPE_OPPO = 6, //oppo服务
+    PS_TYPE_FCM = 7, //FCM服务
+};
+
+struct RegInfo {
+    0  require string packId = "";                           //消息的id
+    1  require PushServiceType serviceType = 0;              //push服务提供商
+    2  require string packageName = "";                          //包名
+    3  require string userId = "";                            //用户id
+    4  optional string appVersion = "";                       //app version
+};
+
+
+struct PushInfo {
+    0  require string packId = "";                           //消息的id
+    1  require string userId = "";                            //用户id
+    2  require int unReadCount = 0;                          //未读消息数
+    3  require string title = "";                            /push标题
+    4  require string content = "";                          //push内容
+    5  optional string uri = "";                              //跳转uri
+    6  optional string extraData="";                           //业务自定义字段
+};
+
+interface PushServant
+{
+    int register(RegInfo regInfo);
+
+    int pushMessage(PushInfo pushInfo);
+};
+
+}; 

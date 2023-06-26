@@ -1,0 +1,13 @@
+
+module otim
+{
+
+interface GroupChatRPCServant
+{
+    int getGroupMember(string groupId, out vector<string> memberIds);
+    
+    bool isGroupMember(string groupId, string memberId);
+
+};
+
+}; 

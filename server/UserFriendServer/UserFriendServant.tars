@@ -1,0 +1,14 @@
+#include "../CommonTars/otim.tars"
+
+module otim
+{
+
+interface UserFriendServant
+{
+    int addFriend(vector<FriendInfo> friends);
+    int delFriend(vector<FriendInfo> friends);
+
+    int getFriend(string userId, out vector<FriendInfo> friends);
+};
+
+}; 

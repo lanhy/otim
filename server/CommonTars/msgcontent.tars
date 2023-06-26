@@ -1,0 +1,63 @@
+module otim
+{
+enum MSG_CONTENT_TYPE
+{
+    MCT_NONE     = 0,
+    MCT_TEXT     = 1,
+    MCT_IMAGE    = 2,
+    MCT_VOICE    = 3,
+    MCT_VEDIO    = 4,
+    MCT_FILE     = 5,
+    MCT_LOCATION    = 6,
+};
+
+//文本消息，可以带跳转链接
+struct MsgText
+{
+    0 require string    text;
+    1 optional string   url;//跳转URL
+};
+
+//图片消息
+struct MsgImage
+{
+    0 require string    url;
+    1 optional int      width;
+    2 optional int      height;
+    3 optional string   title;
+
+};
+
+//语音消息
+struct MsgVoice
+{
+    0 require string url;
+    1 optional int   time;//语音时长，单位：秒
+};
+
+//视频消息
+struct MsgVedio
+{
+    0 require string url;
+    1 require int time;//视频时长，单位：秒
+    2 require int size;     //文件大小，防止超限
+    3 optional string  coverUrl;//封面地址 宽高根据UI设计可以自行缩放裁剪
+};
+
+//文件消息
+struct MsgFile
+{
+    0 require string url;
+    1 require string name;//文件名
+    2 require int size;//文件大小
+};
+
+//位置消息
+struct MsgLocation
+{
+    0 require double lon;//经度
+    1 require double lat;//纬度
+    2 require string title;//位置名称
+};
+
+};

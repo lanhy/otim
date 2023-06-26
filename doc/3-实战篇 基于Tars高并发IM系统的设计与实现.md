@@ -1700,13 +1700,13 @@ CLog
 - SDK对外接口及回调接口
 ITnImSdkCallback
 ```cpp
-  /**
+ /**
      * OMTP回调接口
      */
-    class ITnImSdkCallback
+    class IOtimSdkCallback
     {
     public:
-        virtual ~ITnImSdkCallback(){}
+        virtual ~IOtimSdkCallback(){}
         
     
         virtual void netStatusChanged(int32_t status) = 0;
@@ -1722,11 +1722,11 @@ ITnImSdkCallback
    
         virtual void msgAck(const std::string &packId, otim::MsgAck* ack) = 0;     
     };
-    
-    class ITnImSdk
+       
+    class IOtimSdk
     {
     public:
-        virtual ~ITnImSdk(){}
+        virtual ~IOtimSdk(){}
         
         /**
          * 增加IM 服务器ip地址和端口
@@ -1740,7 +1740,7 @@ ITnImSdkCallback
          * 设置SDK 回调指针
          * @param callback 回调接口指针
          */
-        virtual void setCallback(ITnImSdkCallback* callback) = 0;
+        virtual void setCallback(IOtimSdkCallback* callback) = 0;
         /**
          * 登录
          * @param name 用户名，可以不填写
@@ -1779,9 +1779,9 @@ ITnImSdkCallback
     /**
      * 日志记录接口
      */
-    class ITnIMLog{
+    class IOtimLog{
     public:
-        virtual ~ITnIMLog(){}
+        virtual ~IOtimLog(){}
 
         /**
          * 写日志
@@ -1805,22 +1805,20 @@ ITnImSdkCallback
     /**
      * 获取日志接口实例，调用此接口前必须调用 initLog
      */
-    ITnIMLog* getLogInstance();
+    IOtimLog* getLogInstance();
     
     /**
      * 初始化IM 模块
      * @param clientInfo IM 所需要的参数
      */
-    ITnImSdk* initIm(TNClientInfo &clientInfo);
+    IOtimSdk* initIm(TNClientInfo &clientInfo);
     
   
     /**
      * 获取IMSDK IM模块实例
      * 调用此函数前必须调用 initIm接口
      */
-    ITnImSdk* getImSDK();
-
-}
+    IOtimSdk* getImSDK();
 
 ```
 
@@ -1876,6 +1874,9 @@ https://github.com/lanhy/otim.git
     第三方库	
 - source
     客户端SDK代码
+- source
+    客户端SDK代码
+- OMTP      
 - TestSDK	
     SDK调用实例		
 

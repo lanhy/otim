@@ -1,0 +1,12 @@
+
+#include "../CommonTars/otim.tars"
+
+module otim
+{
+
+interface OlapServant
+{
+    int saveMsg(otim::ClientContext clientContext, OTIMPack pack, string sessionId, long seqId);
+};
+
+}; 
