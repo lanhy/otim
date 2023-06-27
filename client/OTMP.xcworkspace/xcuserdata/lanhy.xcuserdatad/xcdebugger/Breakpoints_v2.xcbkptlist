@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "31177602-9593-4048-A6AD-F7CFBC2079DE"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "164A3CE0-3FC7-4440-A52F-8BB82B0502C5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../ios/beaconlp/WeChat/Request/find/cook/WXCookRequest.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "-initWithCid:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "19482BC5-A3DC-48D5-B47F-6566EA1ACE64"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../ios/beaconlp/WeChat/Request/find/cook/WXCookSortRequest.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "-init"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BA3FE431-04A3-4B26-AA26-C76EF76137E7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../ios/beaconlp/WeChat/Request/find/weather/WXCityRequest.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "-init"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A453FAAC-A7F7-4938-B630-A41E858A792E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../ios/beaconlp/WeChat/Request/find/weather/WXWeatherRequest.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "-initWithCity:district:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9B4AA1AA-4B68-4497-BD28-16E1B0C1BB57"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../ios/beaconlp/WeChat/MNKit/utilities/MNUpdater/MNUpdater.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "+checkProductVersionFromItunes:timeoutInterval:queue:completion:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4EF2E4EE-A2FD-4B53-9FDF-0517ED62667D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../source/TNIMSDK/db/CTNDBChat.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "914"
+            endingLineNumber = "914"
+            landmarkName = "CTNDBChat::getMaxSeqAllMessage(sessionId)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73172726-BE42-4126-B6CC-213ABFDDCC72"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../source/TNIMSDK/CHAT/CTNChatManagerMsg.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "404"
+            endingLineNumber = "404"
+            landmarkName = "CTNChatManager::transOffmsgs(vctSrc, vctDest, maxSeqId)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2763FA07-147C-4B27-A106-1CB24CD5A341"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../source/TNIMSDK/db/CTNDBChat.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
+            landmarkName = "CTNDBChat::updateSessionTitleAndImage(sessionId, title, avatarId)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "70327E32-0E90-477A-8703-FFE495FB8D67"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../source/TNIMSDK/db/CTNDBGroupChat.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "913"
+            endingLineNumber = "913"
+            landmarkName = "CTNDBGroupChat::getFriends(userId, userInfos)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D7B3955-05E5-473F-868E-C330F7517953"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../source/TNIMSDK/db/CTNDBChat.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2114"
+            endingLineNumber = "2114"
+            landmarkName = "CTNDBChat::generateSession(stmt)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "742AA854-57AD-4C9E-B7E4-80EAAA5DB06A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../source/TNIMSDK/CHAT/CTNChatManagerMsg.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "CTNChatManager::processHotSessionResp(vctSession)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AC5CBE4-384B-4ED4-B327-24EA95E73BDB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../source/TNIMSDK/CHAT/CTNChatManager.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "initLog(appPath)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82550F4D-844D-4E92-AEDD-20CBBBAF7EBE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestSDK/TestSDK/ViewController.mm"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F3331EE3-4C97-4DB5-85A8-98AD4061465C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestSDK/TestSDK/PinyinTrans.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "PinyinTrans::getPinyinsByGBK(text, sep)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "30A538BE-3D1D-4B8C-AF6F-E0A626DD8F67"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestSDK/TestSDK/PinyinTrans.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "PinyinTrans::getPinyinsByGBK(text, sep)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECBE9091-CCAD-4436-9B23-6D18D1331D80"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestSDK/TestSDK/Pinyin.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "868"
+            endingLineNumber = "868"
+            landmarkName = "Pinyin::GetPinyins(chr)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD1CEC5F-76C5-41C2-919E-F058A39B1F29"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../source/TNIMSDK/CHAT/CTNChatManager.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "572"
+            endingLineNumber = "572"
+            landmarkName = "CTNChatManager::syncFriendUserInfos()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "533CAB69-FD04-4A48-8E90-C6E27C0AEDE5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../source/TNIMSDK/CHAT/CTNChatManager.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "625"
+            endingLineNumber = "625"
+            landmarkName = "CTNChatManager::reqUserinfosFromServer(userIds)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72A4696B-905D-4C91-BC2B-CE0297118E9D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../source/TNIMSDK/CHAT/CTNChatManager.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "585"
+            endingLineNumber = "585"
+            landmarkName = "CTNChatManager::syncGroupChat()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../source/TNIMSDK/CHAT/CTNChatManager.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "319"
+            endingLineNumber = "319"
+            landmarkName = "CTNChatManager::msgAck(sessionId, msgId, seqId, timestamp, result)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - 2bbb6942f94800a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::MsgSyncReq&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - 552b24fb665e02c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::MsgGetMsgOperatorListReq&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - 6837fa513f86a2c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::MsgGetMsgOperatorListResp&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - b3c2652a22f19626"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::SetUserStatus&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - ec80994322a042de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::SyncMyGroupChatsResp&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "161">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - af41a44658a3cecd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::GetFriendsResp&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - 292e9ade229b3bd8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::GetGroupMemberResp&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "161">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - 559f320d2ee13e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::GetUserInfoResp&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - 9fb0d30e4d0f4e2e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::MsgAck&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "161">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - 1844ba26b95f5b3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::MsgEvent&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "161">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - 9ba3472261c951b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::MsgCancelReq&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "161">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - ba7cf469fe0a69fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::MsgCancelResp&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - d5a7a7f40a980528"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::GetUserStatusResp&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - 566e635a72e5e3ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::GetOnlineStatusResp&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - c5260c4f45b112e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::ServiceReq&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "161">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - 36f86609c3aa5e9c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::ServiceResp&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "161">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - 528db9abc373c73"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::ProxyResp&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - 58d4a68ee82fb829"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::HotSessionResp&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - 5f59b3dee1bdc245"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::CursorResp&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - b24d8bb9ce885d31"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::SessionManagerReq&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "161">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - 317322a1d0a2d032"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::SessionManagerResp&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "161">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - afbfcabd208e3a02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::UserManagerReq&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "161">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - ca32dab71032405f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::UserManagerResp&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "161">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - 486ea9cbea77421a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::GroupSessionEvent&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "161">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - 54dc5d4516e9bb44"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::LogReportReq&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "161">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - 779305f82e9c0a2f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::LogReportResp&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - 767fded169732f96"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::AVCallEvent&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "161">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - 8979884160fc294d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::AVCallAck&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - b3f0478683864057"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::MsgOverRideReq&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "161">
+               </Location>
+               <Location
+                  uuid = "0D88BD33-1B74-4FBF-8A9F-D804123DE188 - b246c61ee36caec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; bfim::getTMTPJsonString&lt;Toon::MsgOverRideResp&gt;(int, std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; const&amp;)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/lanhy/code/huohua/client/sdk/source/TNIMSDK/CHAT/CTNChatManager.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "321"
+                  endingLineNumber = "321"
+                  offsetFromSymbolStart = "152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9651BE31-E60E-4F10-8359-DED42655A4D8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../source/TMTP/src/CTNProcessThread.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "690"
+            endingLineNumber = "690"
+            landmarkName = "CTNProcessThread::processRecvMsgReq(packetBuffer)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF1FA917-0A3E-4598-BA39-474481E73E9E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../source/TMTP/src/CTNProcessThread.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "715"
+            endingLineNumber = "715"
+            landmarkName = "CTNProcessThread::processMsgAck(packetBuffer)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "07A1ACB0-B434-4B85-A78E-AA82516DAEB4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../source/TMTP/src/CTNProcessThread.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1120"
+            endingLineNumber = "1120"
+            landmarkName = "CTNProcessThread::processHotSessionResp(packetBuffer)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F55E806C-E78B-4489-A1BF-B60F47F9E86E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../source/TMTP/include/CTNMPConfig.h"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "keepAlive()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "45818D2F-6FD3-42F5-9DCC-006F48E0C71A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../source/TMTP/include/CTNMPConfig.h"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "keepAlive(keepAlive)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD5950EF-49EC-4E9B-891E-A4DC12AF2FB3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../source/TMTP/src/CTNProcessThread.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "553"
+            endingLineNumber = "553"
+            landmarkName = "CTNProcessThread::sendMsgReq(type, req, inflight)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1618DE11-D959-4BC0-B700-102E9D1A6DF1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/src/CTNSendRecvThread.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
+            landmarkName = "CTNSendRecvThread::processRecvData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1618DE11-D959-4BC0-B700-102E9D1A6DF1 - c4f686639ae2ee80"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CTNSendRecvThread::processRecvData()"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lanhy/code/otim/client/source/src/CTNSendRecvThread.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "249"
+                  endingLineNumber = "249"
+                  offsetFromSymbolStart = "1318">
+               </Location>
+               <Location
+                  uuid = "1618DE11-D959-4BC0-B700-102E9D1A6DF1 - c4f686639ae2ee80"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CTNSendRecvThread::processRecvData()"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lanhy/code/otim/client/source/src/CTNSendRecvThread.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "249"
+                  endingLineNumber = "249"
+                  offsetFromSymbolStart = "1680">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B4E4646-6CEB-4A41-827E-10CCE40DCD0F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/src/CTNSendRecvThread.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "CTNSendRecvThread::postRecvPacketBuffer(packetBuffer)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "40CEE962-053D-43BF-95CC-8D9A0B4F21AD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/src/CTNSendRecvThread.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
+            landmarkName = "CTNSendRecvThread::run()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "13DE7AB1-08A0-4FD2-A075-54F35727DF44"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/src/CTNSendRecvThread.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "251"
+            endingLineNumber = "251"
+            landmarkName = "CTNSendRecvThread::processRecvData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "967418FC-CAC8-456D-9BB8-B726CB550611"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/src/CTNSendRecvThread.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "263"
+            endingLineNumber = "263"
+            landmarkName = "CTNSendRecvThread::sendPacket(packet)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EB777DE1-F474-445D-9675-D79A1C69B757"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/src/CTNSendRecvThread.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
+            landmarkName = "CTNSendRecvThread::processRecvData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "71C768F2-3C25-441F-BE6A-4130566B6852"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/src/CTNProcessThread.h"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "sendReq(type, req)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "71C768F2-3C25-441F-BE6A-4130566B6852 - 1a4b39a624dc2331"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "void CTNProcessThread::sendReq&lt;otim::LoginReq&gt;(unsigned short, otim::LoginReq*)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lanhy/code/otim/client/source/src/CTNProcessThread.h"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "1118">
+               </Location>
+               <Location
+                  uuid = "71C768F2-3C25-441F-BE6A-4130566B6852 - 2584aff5a2ded67f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "void CTNProcessThread::sendReq&lt;otim::HotSessionReq&gt;(unsigned short, otim::HotSessionReq*)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lanhy/code/otim/client/source/src/CTNProcessThread.h"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "1118">
+               </Location>
+               <Location
+                  uuid = "71C768F2-3C25-441F-BE6A-4130566B6852 - f1cee55b06014c07"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "void CTNProcessThread::sendReq&lt;otim::OTIMPack&gt;(unsigned short, otim::OTIMPack*)"
+                  moduleName = "TestSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lanhy/code/otim/client/source/src/CTNProcessThread.h"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "1118">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A35CB9B4-B830-419F-B306-764576F64E76"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/src/CTNProcessThread.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "604"
+            endingLineNumber = "604"
+            landmarkName = "CTNProcessThread::processRecvPack(pack)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C115EA0B-C75F-4105-9BA8-D309EE7BC4A7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "source/src/CTNProcessThread.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "283"
+            endingLineNumber = "283"
+            landmarkName = "CTNProcessThread::run()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "662F209F-F45C-445F-B5E5-8BD41B6AE35B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestSDK/TestSDK/ViewController.mm"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

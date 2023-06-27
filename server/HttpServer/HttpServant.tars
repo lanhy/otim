@@ -1,0 +1,21 @@
+#include "../CommonTars/otim.tars"
+
+module otim
+{
+    enum TaskType
+    {
+        TASK_TYPE_NULL = 0,
+        TASK_TYPE_SINGLE = 1,
+        TASK_TYPE_BIZMSG = 2,
+        TASK_TYPE_SYNCCMD = 3,
+    };
+        
+    struct TaskQueueItem
+    {
+        0 require string traceId;
+        1 require TaskType taskType;       //类型
+        2 require OTIMPack pack;
+        3 require vector<string> userIds;     //接收用户Id列表
+    };
+    
+};

@@ -1,0 +1,13 @@
+#include "../CommonTars/otim.tars"
+
+module otim
+{
+
+interface BrokerPushServant
+{
+    int push(long uid, OTIMPack pack);
+    int syncMsg(otim::ClientContext clientContext, OTIMPack pack);
+    int kickout(otim::ClientContext clientContext, long uid);
+};
+
+}; 
